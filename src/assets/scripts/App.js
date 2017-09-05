@@ -1,7 +1,8 @@
-import jquery from 'jquery';
+
 import 'babel-polyfill';
 import FormField from './views/FormField';
 
+const $ = window.jQuery;
 /**
  * Initial application setup. Runs once upon every page load.
  *
@@ -19,7 +20,8 @@ class App {
      */
     init() {
         // Create your views here
-        this.formField = new FormField($('.gfield input, .gfield textarea'), '.gfield');
+
+        this.formField = new FormField($('input[type=text]'), '.formField');
 
         return this;
     }

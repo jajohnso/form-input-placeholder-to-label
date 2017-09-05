@@ -15,7 +15,7 @@ class FormField {
     constructor($element, parentElementName) {
         this.$element = $element;
         this.parentClass = parentElementName;
-
+        console.log($element, parentElementName);
         this.init();
 
     }
