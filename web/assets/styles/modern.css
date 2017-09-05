@@ -84,3 +84,40 @@ body{
 *{
     box-sizing:border-box;
 }
+input[type=text]{
+    display:block;
+    width:300px;
+    background-color:white;
+    border:1px solid #666666;
+    font-size:16px;
+    color:#666666;
+    padding:12px 12px;
+    border-radius:0;
+    transition:all .25s ease-in-out;
+}
+.formField{
+    position:relative
+}
+.formField label{
+    display:block;
+    color:#cccccc;
+    transition:all .15s ease-in-out;
+    -webkit-transform:translate3d(15px, 30px, 0);
+            transform:translate3d(15px, 30px, 0);
+    -webkit-transform-origin:left;
+        -ms-transform-origin:left;
+            transform-origin:left;
+    pointer-events:none;
+}
+.formField.isActive{
+}
+.formField.isActive label{
+    color:green;
+    -webkit-transform:translate3d(0, 0, 0) scale(0.8);
+            transform:translate3d(0, 0, 0) scale(0.8);
+}
+.formField.isActive.hasValue{
+}
+.formField.isActive.hasValue label{
+    color:#666666;
+}
