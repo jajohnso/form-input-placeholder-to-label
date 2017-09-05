@@ -1,0 +1,62 @@
+/* Global form field styling should be included using @apply */
+
+:root {
+    --inputStyles: {
+        display: block;
+        width: 100%;
+        background-color: var(--COLOR_WHITE);
+        border: 1px solid var(--COLOR_OFFWHITE);
+        font-size: 14px;
+        color: var(--COLOR_BLACK);
+        font-weight: 400;
+        padding: 12px 12px;
+        box-sizing: border-box;
+        border-radius: 0;
+        transition: all .25s ease-in-out;
+    }
+    
+    --inputHoverStyles: {
+        border: 1px solid var(--COLOR_ORANGE);
+        outline: none;
+    }
+    --selectStyles: {
+        font-family: inherit;
+        letter-spacing: normal;
+        display: inline-block;
+        height: 51px;
+        padding: 15px 35px 15px 15px;
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--COLOR_BLACK);
+        background: darken(var(--COLOR_OFFWHITE), 2) url(../media/select-arrow.png) no-repeat right 18px;
+        border: 1px solid darken(var(--COLOR_OFFWHITE), 7);
+        appearance: none;
+    }
+    
+    --submitButtonStyles: {
+        background: var(--COLOR_ORANGE);
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.7em;
+        font-family: inherit;
+        color: var(--COLOR_WHITE) !important;
+        margin: 25px 0 0;
+        padding: 6px 40px;
+        border: none;
+        border-radius: 3px;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    --submitButtonHoverStyles: {
+        opacity: .7 !important;
+        cursor: pointer;
+    }
+
+    --labelStyles: {
+        display: block;
+        font-weight: 400;
+        margin: 0 0 5px;
+        text-transform: uppercase;
+    }
+}

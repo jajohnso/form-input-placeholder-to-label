@@ -1,0 +1,15 @@
+/* styling for unclassed elements - use sparingly these are global */
+
+html,
+body {
+    font-family: sans-serif;
+    -webkit-overflow-scrolling: touch;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
