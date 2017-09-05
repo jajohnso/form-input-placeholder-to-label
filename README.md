@@ -18,3 +18,5 @@ A new instance of the script would look like this:
 ```
 new FormField($('input[type=text]'), '.formField');
 ```
+
+See a demo https://jajohnso.github.io/form-input-placeholder-to-label/
